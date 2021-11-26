@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Android Test</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home">Home</string>
+    <string name="discover">Discover</string>
+    <string name="notifications">Notifications</string>
+    <string name="profile">Profile</string>
+    <string name="description">Get meaning and translation of Discription in Hindi language with grammar, antonyms, synonyms and sentences usages</string>
+    <string name="more">More</string>
+    <string name="rupi_kaur">rupi kaur</string>
+    <string name="post_dots">Post Dots</string>
+    <string name="like">Like</string>
+    <string name="comment">Comment</string>
+    <string name="share">Share</string>
+    <string name="_5_likes">5 Likes</string>
+    <string name="rupi_kaul">rupi kaul</string>
+</resources>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageButton
+        android:layout_marginBottom="28dp"
+        android:layout_width="wrap_content"
+        android:src="@drawable/group_145"
+        android:translationZ="9dp"
+        android:padding="0dp"
+        android:id="@+id/iconPlus"
+        android:contentDescription="Add"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/bottom_nav"
+        android:layout_height="wrap_content"/>
+
+
+<fragment
+    android:id="@+id/nav_host"
+    android:name="androidx.navigation.fragment.NavHostFragment"
+    app:navGraph="@navigation/mobile_navigation"
+    app:layout_constraintBottom_toTopOf="@id/bottom_nav"
+    app:defaultNavHost="true"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"/>
+<com.google.android.material.bottomnavigation.BottomNavigationView
+    android:layout_width="match_parent"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:labelVisibilityMode="labeled"
+    app:menu="@menu/bottom_nav_menu"
+
+    app:itemTextAppearanceActive="@style/BottomNavigationView.Active"
+    app:itemTextAppearanceInactive="@style/BottomNavigationView"
+    android:id="@+id/bottom_nav"
+    android:layout_height="wrap_content"/>
+
+
+<!--<androidx.cardview.widget.CardView-->
+<!--    android:layout_width="match_parent"-->
+<!--    app:cardCornerRadius="8dp"-->
+<!--    android:id="@+id/bottom_bar"-->
+<!--    app:layout_constraintBottom_toBottomOf="parent"-->
+<!--    android:layout_height="56dp">-->
+<!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent">-->
+<!--        <androidx.constraintlayout.helper.widget.Flow-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--           app:constraint_referenced_ids="home,discovers,space,notifications,profile"-->
+<!--            app:flow_horizontalAlign="start"-->
+<!--            app:flow_horizontalBias="0"-->
+<!--            app:flow_maxElementsWrap="5"-->
+<!--            app:flow_verticalBias="0"-->
+<!--            app:flow_wrapMode="chain"-->
+<!--            app:flow_horizontalStyle="spread"-->
+<!--           app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"/>-->
+
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:id="@+id/home"-->
+<!--            android:orientation="vertical"-->
+<!--            android:gravity="center"-->
+<!--            android:layout_height="wrap_content">-->
+<!--            <ImageView-->
+<!--                android:src="@drawable/icon_open_home"-->
+<!--                android:id="@+id/homeImage"-->
+<!--                android:layout_width="24dp"-->
+<!--                android:layout_height="24dp"-->
+<!--                app:tint="@color/blue" />-->
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:text="Home"-->
+<!--                android:textSize="8sp"-->
+<!--                android:layout_height="wrap_content"/>-->
+<!--        </LinearLayout>-->
+<!--        <LinearLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:id="@+id/discovers"-->
+<!--            android:orientation="vertical"-->
+<!--            android:gravity="center"-->
+<!--            android:layout_height="wrap_content">-->
+<!--            <ImageView-->
+<!--                android:src="@drawable/surface1"-->
+<!--                android:layout_width="24dp"-->
+<!--                android:layout_height="24dp"/>-->
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:text="Discover"-->
+<!--                android:textSize="8sp"-->
+<!--                android:layout_height="wrap_content"/>-->
+<!--        </LinearLayout>-->
+<!--        <LinearLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:id="@+id/notifications"-->
+<!--            android:orientation="vertical"-->
+<!--            android:gravity="center"-->
+<!--            android:layout_height="wrap_content">-->
+<!--            <ImageView-->
+<!--                android:src="@drawable/notification"-->
+<!--                android:layout_width="24dp"-->
+<!--                android:layout_height="24dp"/>-->
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:text="Notifications"-->
+<!--                android:textSize="8sp"-->
+<!--                android:layout_height="wrap_content"/>-->
+<!--        </LinearLayout>-->
+<!--        <LinearLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:id="@+id/profile"-->
+<!--            android:gravity="center"-->
+<!--            android:orientation="vertical"-->
+<!--            android:layout_height="wrap_content">-->
+<!--            <ImageView-->
+<!--                android:src="@drawable/icon_material_account_circle"-->
+<!--                android:layout_width="24dp"-->
+<!--                android:layout_height="24dp"/>-->
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:text="Profile"-->
+<!--                android:textSize="8sp"-->
+<!--                android:layout_height="wrap_content"/>-->
+<!--        </LinearLayout>-->
+
+
+
+<!--        <Space-->
+<!--            android:id="@+id/space"-->
+<!--            android:layout_width="44dp"-->
+<!--            android:layout_height="24dp"/>-->
+
+
+
+
+
+<!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
+<!--</androidx.cardview.widget.CardView>-->
+<!--    <ImageButton-->
+<!--        android:layout_marginBottom="28dp"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:src="@drawable/group_145"-->
+<!--        android:translationZ="4dp"-->
+<!--        android:padding="0dp"-->
+<!--        android:id="@+id/iconPlus"-->
+<!--        android:contentDescription="Add"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintBottom_toBottomOf="@id/bottom_bar"-->
+<!--        android:layout_height="wrap_content"/>-->
+</androidx.constraintlayout.widget.ConstraintLayout>
