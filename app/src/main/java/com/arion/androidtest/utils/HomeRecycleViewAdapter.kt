@@ -17,9 +17,6 @@ class HomeRecycleViewAdapter(private val list: List<Posts>): RecyclerView.Adapte
                 userProfile.setImageResource( posts.dp)
                 userName.text = posts.name
                 userPosts.adapter = ViewPagerAdapter(posts.postImages)
-//                TabLayoutMediator(dotsTab,userPosts){ tab, _ ->
-//                    tab.icon = ContextCompat.getDrawable(item.root.context, R.drawable.tab_selector)
-//                }
                 userProfile1.setImageResource(posts.dp)
                 userLikes1.setImageResource(posts.dp)
                 userLikes2.setImageResource(posts.dp)
